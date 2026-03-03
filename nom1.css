@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+  color: #f3f2f2;
+  background: linear-gradient(135deg, #1f1e1e 0%, #676264 100%);
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 26px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+nav {
+  display: flex;
+  justify-content: center; 
+  gap: 20px;
+}  
+
+nav a {
+  padding: 10px 20px;
+  text-decoration: none;
+  color: white;
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: 10px;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+}
+
+.math-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 30px;
+  width: 400px;
+  border: 1px solid rgba(255,255,255,0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+input, select {
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #555;
+  background: #c4c3c3;
+  color: rgb(4, 4, 4);
+  margin-bottom: 25px;
+  width: 80%;
+}
+
+.selectors {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+button {
+  width: 60%; 
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  background: #ff7bb8;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.result-box {
+  margin-top: 20px;
+  padding: 15px;
+  background: rgba(255,255,255,0.05);
+  border-radius: 10px;
+  text-align: center;
+  width: 90%;
+}

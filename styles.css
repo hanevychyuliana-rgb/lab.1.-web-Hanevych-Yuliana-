@@ -1,0 +1,179 @@
+body{
+  margin: 10;
+  color: #f3f2f2;
+  background: linear-gradient(135deg, #1f1e1e 0%, #676264 100%);
+  min-height: 100vh;
+}
+
+.bg-decor{
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+
+header{
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  padding: 26px 28px;
+
+  background: rgba(255, 255, 255, 0.12);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+}
+
+
+nav{
+  display: flex;
+  justify-content: center; 
+  gap: 100px;            
+  flex-wrap: wrap;
+}  
+
+nav a{
+display:inline-block;
+  margin-right:0px;
+  padding:10px 12px;
+  text-decoration:none;
+  color: rgba(255,255,255,0.92);
+  font-weight:800;
+  border-radius:14px;
+  border:1px solid rgba(255,255,255,0.22);
+  background: rgba(255,255,255,0.10);
+}
+
+nav a:hover{
+  transform: translateY(-1px);
+  background: rgba(255,255,255,0.18);
+}
+
+.container{
+
+  margin: 0 auto;
+  padding: 30px 18px 50px;
+}
+
+.card{
+  background: rgba(255, 255, 255, 0.14);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+
+  border-radius: 24px;
+  padding: 20px;
+  box-shadow: 0 18px 60px rgba(0,0,0,0.18);
+}
+
+h1, h2{
+  display: flex;
+  font-weight: 900;
+  color: rgba(255,255,255,0.96);
+  letter-spacing: 0.8px;
+  width: fit-content;
+}
+
+
+p{
+  margin: 10px 0;
+  color: rgba(255,255,255,0.88);
+}
+
+.small{
+  font-size: 13px;
+  color: rgba(255,255,255,0.78);
+}
+
+.grid{
+  margin-top: 16px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 14px;
+}
+
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  margin-top: 10px;
+}
+
+/* Поля ввода */
+input, select, textarea{
+  padding: 11px 12px;
+  border-radius: 16px;
+
+  border: 1px solid rgba(255,255,255,0.28);
+  background: rgba(255,255,255,0.12);
+  color: rgba(255,255,255,0.95);
+
+  outline: none;
+  font-size: 14px;
+}
+
+textarea{
+  width: 100%;
+  min-height: 120px;
+  resize: vertical;
+}
+
+input::placeholder, textarea::placeholder{
+  color: rgba(255,255,255,0.70);
+}
+
+/* Кнопки */
+button{
+  padding: 11px 14px;
+  border-radius: 16px;
+  border: 1px solid rgba(255,255,255,0.25);
+  cursor: pointer;
+
+  font-weight: 900;
+  color: #ffffff;
+
+  background: linear-gradient(135deg, rgba(255,123,184,0.95), rgba(111,45,189,0.95));
+  box-shadow: 0 14px 30px rgba(0,0,0,0.16);
+  transition: 0.18s;
+}
+
+button:hover{
+  transform: translateY(-1px);
+  box-shadow: 0 18px 40px rgba(0,0,0,0.20);
+}
+
+button:active{
+  transform: translateY(0px);
+}
+
+/* Блок результата */
+.out{
+  margin-top: 12px;
+  padding: 14px;
+  border-radius: 18px;
+
+  background: rgba(255,255,255,0.12);
+  border: 1px solid rgba(255,255,255,0.22);
+
+  font-weight: 800;
+  color: rgba(255,255,255,0.95);
+  white-space: pre-wrap;
+}
+
+/* Ссылки внутри карточек (welcome) */
+.card a{
+  color: rgba(255,255,255,0.95);
+  font-weight: 900;
+  text-decoration: none;
+  border-bottom: 1px dashed rgba(255,255,255,0.55);
+}
+
+.card a:hover{
+  border-bottom-color: rgba(255,255,255,0.95);
+}
+
+p {
+  width: fit-content;
+}

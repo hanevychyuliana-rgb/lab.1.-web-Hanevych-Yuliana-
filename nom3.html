@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Завдання 3</title>
+    <link rel="stylesheet" href="nom3.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="index.html">Головна</a>
+            <a href="nom1.html">1</a>
+            <a href="nom2.html">2</a>
+            <a href="nom3.html" class="active">3</a>
+        </nav>
+    </header>
+
+    <div class="main-container">
+        <div class="math-card">
+            <h2>Аналізатор тексту</h2>
+            <p>Вставте текст, щоб дізнатися його довжину:</p>
+
+            <div class="input-group">
+                <textarea id="textInput" placeholder="Пишіть або вставте текст тут..."></textarea>
+                
+                <button onclick="countChars()">Порахувати символи</button>
+            </div>
+
+            <div id="charResult" class="result-box">
+                символів: 0
+            </div>
+        </div>
+    </div>
+
+    <script src="nom3.js"></script>
+</body>
+</html>
